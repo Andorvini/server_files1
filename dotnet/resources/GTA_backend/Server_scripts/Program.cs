@@ -1,9 +1,11 @@
-﻿using GTANetworkAPI;
+﻿#define COREHOST_TRACE
+using GTANetworkAPI;
 using GTANetworkInternals;
 using System.Net.Http.Headers;
 using System.Net.WebSockets;
 using System.Diagnostics.Tracing;
 using Npgsql;
+
 
 namespace mygaymode.Server_scripts
 {
