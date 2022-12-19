@@ -95,7 +95,7 @@
         }
       },
       "runtimes": {
-        "ubuntu.22.04-x64": {
+        "linux-x64": {
           "#import": []
         },
         "win10-x64": {

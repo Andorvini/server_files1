@@ -270,7 +270,7 @@
         }
       }
     },
-    "net7.0/ubuntu.22.04-x64": {
+    "net7.0/linux-x64": {
       "Microsoft.EntityFrameworkCore/7.0.1": {
         "type": "package",
         "dependencies": {
@@ -1304,7 +1304,7 @@
       }
     },
     "runtimes": {
-      "ubuntu.22.04-x64": {
+      "linux-x64": {
         "#import": []
       },
       "win10-x64": {

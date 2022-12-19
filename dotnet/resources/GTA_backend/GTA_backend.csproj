@@ -2,9 +2,7 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <RuntimeIdentifiers>
-    win10-x64;ubuntu.22.04-x64
-    </RuntimeIdentifiers>
+    <RuntimeIdentifiers>win10-x64;linux-x64</RuntimeIdentifiers>
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
