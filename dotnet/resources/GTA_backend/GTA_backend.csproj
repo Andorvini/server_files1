@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <RuntimeIdentifiers>
+    win10-x64;ubuntu.22.04-x64
+    </RuntimeIdentifiers>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="7.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Bootstrapper">
+      <HintPath>dotnet\runtime\Bootstrapper.dll</HintPath>
+    </Reference>
+    <Reference Include="rage-sharpN">
+      <HintPath>dotnet\runtime\rage-sharpN.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

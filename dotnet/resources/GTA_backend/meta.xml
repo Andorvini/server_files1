@@ -1,0 +1,5 @@
+<meta>
+    <info  name="Server_side" description="Server side proj in C#" />
+
+    <script  src="bin/Release/net7.0/GTA_backend.dll" />
+</meta>

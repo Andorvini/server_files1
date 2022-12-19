@@ -1,0 +1,5 @@
+client_packages/game_resources/dlcpacks/
+data_files/
+maps/
+*.exe
+BugTrap-x64.dll
