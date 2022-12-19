@@ -1,5 +1,4 @@
-﻿#define COREHOST_TRACE
-using GTANetworkAPI;
+﻿using GTANetworkAPI;
 using GTANetworkInternals;
 using System.Net.Http.Headers;
 using System.Net.WebSockets;
@@ -14,6 +13,7 @@ namespace mygaymode.Server_scripts
         static void Main()
         {
             int a;
+            Environment.SetEnvironmentVariable("COREHOST_TRACE", "1");
         }
         public Program()
         {
