@@ -1,8 +1,4 @@
 ﻿using GTANetworkAPI;
-using GTANetworkInternals;
-using System.Net.Http.Headers;
-using System.Net.WebSockets;
-using System.Diagnostics.Tracing;
 using Npgsql;
 
 
@@ -12,8 +8,7 @@ namespace mygaymode.Server_scripts
     {
         static void Main()
         {
-            int a;
-            Environment.SetEnvironmentVariable("COREHOST_TRACE", "1");
+
         }
         public Program()
         {
@@ -28,13 +23,7 @@ namespace mygaymode.Server_scripts
             NAPI.World.RemoveIpl("RC12B_Fixed");
             NAPI.World.RemoveIpl("RC12B_HospitalInterior_lod");
             NAPI.World.RemoveIpl("bh1_13_strm_0");
-            var db = SQL_process.CreateDB();
-            NAPI.Util.ConsoleOutput(SQL_process.Connection_String);
-            using (var a = new NpgsqlConnection(SQL_process.Connection_String))
-            {
-                a.Open();
-            }
-
+            //SQL_process.CreateDB();
         }
 
         [Command("tp")]

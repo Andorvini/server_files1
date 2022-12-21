@@ -3,3 +3,4 @@ data_files/
 maps/
 *.exe
 BugTrap-x64.dll
+dotnet/runtime/

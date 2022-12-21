@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = GTA_backend
-build_property.ProjectDir = D:\Коды\RAGE\dotnet\GTA_backend\
+build_property.ProjectDir = D:\Codes\RAGE\dotnet\resources\GTA_backend\

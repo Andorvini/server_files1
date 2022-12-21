@@ -1,17 +1,4 @@
-﻿using Microsoft.Extensions.Options;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection.Metadata.Ecma335;
-using System.Security;
-using System.Text;
-using Npgsql;
-using System.Runtime.CompilerServices;
-using GTANetworkAPI;
-using System.Security.Cryptography;
-
-//  <PackageReference Include="Microsoft.Data.SqlClient" Version="5.0.1" />
-namespace mygaymode
+﻿namespace mygaymode
 {
     internal class SQL_process
     {
@@ -28,20 +15,22 @@ namespace mygaymode
                     if (instance == null)
                     {
                         instance = new SQL_process();
-                        Connection_String = instance.AddConnectionString(Path.GetFullPath("Data_files\\ConnectionString.txt"));
+                        Connection_String = instance.AddConnectionString();
                     }
                 }
             }
             return instance;
         }
-        private string AddConnectionString(string path_encrypted_file)
+        private string AddConnectionString()
         {
-            byte[] scanned = File.ReadAllBytes(path_encrypted_file);
-            Aes aes = Aes.Create();
-            byte[] decoded = aes.DecryptEcb(scanned, PaddingMode.ISO10126);
-            string res = Encoding.ASCII.GetString(decoded, 0, decoded.Length);
-            NAPI.Util.ConsoleOutput(res);
-            return res;
+            string[] str_arr = File.ReadAllLines("..\\..\\..\\Data_process\\cnstr.bin");
+            var cstr = str_arr[0].ToCharArray();
+            for (int i = 0; i < cstr.Length; i++)
+            {
+                cstr[i] = (char)(cstr[i] + 5);
+            }
+            string data = new string(cstr);
+            return data;
         }
     }
 }
